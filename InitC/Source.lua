@@ -88,7 +88,7 @@ local Alc = {
 		local Table;
 
 		pcall(function()
-			Table = game:HttpGet("https://raw.githubusercontent.com/evoincorp/lucideblox/master/src/modules/util/icons.json")
+			Table = game:HttpGet("https://raw.githubusercontent.com/G1GX/Collection/refs/heads/main/InitC/icon.lua.txt")
 		end)
 
 		if not Table then
