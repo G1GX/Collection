@@ -83,22 +83,7 @@ local Alc = {
 		['DropColor'] = Color3.fromRGB(25, 102, 61)
 	},
 	CoreGui = game:FindFirstChild('CoreGui') or LocalPlayer.PlayerGui,
-	Windows = {},
-	Icons = (function()
-		local Table;
-
-		pcall(function()
-			Table = game:HttpGet("https://raw.githubusercontent.com/evoincorp/lucideblox/master/src/modules/util/icons.json")
-		end)
-
-		if not Table then
-			Table = require(script:WaitForChild('icon'))
-		end
-
-		local _,cal = pcall(HttpService.JSONDecode,HttpService,Table)
-
-		return (_ and cal) or {['icons'] = {}}
-	end)()
+	Windows = {}
 }
 
 local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
