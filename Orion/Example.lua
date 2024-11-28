@@ -1,3 +1,13 @@
+--option
+--[[ H = Tab:AddToggle({
+	Name = "This is a toggle!",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})--]]
+--H:Set(true)
+--Set(value)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
@@ -20,7 +30,6 @@ Tab:AddButton({
       		print("button pressed")
   	end    
 })
-CoolToggle:Set(true)
 Tab:AddToggle({
 	Name = "This is a toggle!",
 	Default = false,
@@ -41,7 +50,6 @@ Tab:AddSlider({
 		print(Value)
 	end    
 })
-Slider:Set(2)
 --[[
 Name = <string> - The name of the slider.
 Min = <number> - The minimal value of the slider.
@@ -95,8 +103,8 @@ Tab:AddDropdown({
 		print(Value)
 	end    
 })
-Dropdown:Refresh(List<table>,true)
-Dropdown:Set("dropdown option")
+--Dropdown:Refresh(List<table>,true)
+--Dropdown:Set("dropdown option")
 --[[
 Name = <string> - The name of the dropdown.
 Default = <string> - The default value of the dropdown.
