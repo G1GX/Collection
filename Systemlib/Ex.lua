@@ -3,11 +3,11 @@ local Window = Library:CreateWindow('BT Project') -- CREATE WINDOW
 
 Tab_1 = Window:addTab('#Home') --Tab
 
-local Home_Left = Tab.Tab_1:addSection() --Section
+local Home_Left = Tab_1:addSection() --Section
 
 Home_Left:addMenu("#Changelog")--label changelog
 
-local Home_Right = Tab.Tab_1:addSection() -- HOME RIGHT SECTION
+local Home_Right = Tab_1:addSection() -- HOME RIGHT SECTION
 
 local Main_Home = Home_Right:addMenu("#Home") --menu right
 
@@ -15,7 +15,10 @@ Main_Home:addTextbox("Speed Hack", 19, function(speedfunc)--Textbox
     print(19)
 end)
 
-Main_Home:addToggle("Infinite Jump", false, function(Value)--togglr
+Main_Home:addToggle("true", true, function(Value)--togglr
+    print(Value)
+end)
+Main_Home:addToggle("false", false, function(Value)--togglr
     print(Value)
 end)
 
