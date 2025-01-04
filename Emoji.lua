@@ -100,6 +100,7 @@ emoji = {
 }
 
 --Exmaple
+--Use this if Your obf dont support emoji
 --API = loadstring(game:HttpGet("https://raw.githubusercontent.com/G1GX/Collection/Emoji.lua"))()
 --emoji = API.emoji
 --Text = "This is " ..emoji.red_circle
